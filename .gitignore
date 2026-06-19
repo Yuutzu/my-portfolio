@@ -1,0 +1,8 @@
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+desktop.ini
+*.log
+
+# Local notes (keep README.txt out of the repo? remove this line if you want it tracked)
+assets/README.txt

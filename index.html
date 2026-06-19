@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justine Keith Polinar | UI/UX & Back-End Developer</title>
+    <meta name="description"
+        content="Justine Keith Polinar | UI/UX and back-end developer from Davao City, Philippines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="wrap">
+            <div class="logo">Keith<span>.</span></div>
+            <div class="navlinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="menubtn" aria-label="menu"
+                onclick="var n=document.querySelector('.navlinks');n.style.display=(getComputedStyle(n).display==='none'?'flex':'none');n.style.flexDirection='column';n.style.position='absolute';n.style.top='72px';n.style.right='22px';n.style.background='var(--bg-soft)';n.style.padding='16px';n.style.border='1px solid var(--line)';n.style.borderRadius='12px'">&#9776;</button>
+        </div>
+    </nav>
+
+    <!-- ===== hero ===== -->
+    <header id="home" class="hero">
+        <div class="wrap hero-grid">
+            <div>
+                <span class="hi reveal">Hello, I am</span>
+                <h1 class="reveal">Justine Keith<br><span class="accent">Polinar</span></h1>
+                <div class="role reveal">A <span class="tw">UI/UX Developer</span> &amp; Back-End Engineer</div>
+                <p class="sub reveal">I design clean, usable web interfaces and back them with solid server-side logic
+                    &mdash; handling everything from layout to databases. Based in Davao City, Philippines.</p>
+                <div class="hero-cta reveal">
+                    <a class="btn" href="#portfolio">View My Work</a>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="codecard">
+                    <div class="codecard-bar"><span></span><span></span><span></span>profile.js</div>
+                    <pre class="codecard-body"><code><span class="ck">const</span> keith = {
+  <span class="cp">role</span>: <span class="cs">"UI/UX + Back-End Dev"</span>,
+  <span class="cp">based</span>: <span class="cs">"Davao City, PH"</span>,
+  <span class="cp">stack</span>: [<span class="cs">"Laravel"</span>, <span class="cs">"MySQL"</span>, <span class="cs">"Python"</span>],
+  <span class="cp">focus</span>: <span class="cs">"clean UI, solid back-end"</span>,
+  <span class="cp">open</span>: <span class="ck">true</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== about ===== -->
+    <section id="about" class="sec">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <div class="eyebrow">Get to know me</div>
+                <h2 class="sec-title"><span class="num">01</span>About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-panel reveal">
+                    <div class="ap-item">
+                        <div class="ap-ic">&#9635;</div>
+                        <div>
+                            <div class="ap-h">UI/UX &amp; Web Design</div>
+                            <p>Designing clean, easy-to-use interfaces and turning them into responsive web pages.</p>
+                        </div>
+                    </div>
+                    <div class="ap-item">
+                        <div class="ap-ic">&#9881;</div>
+                        <div>
+                            <div class="ap-h">Back-End Operations</div>
+                            <p>Building the server-side logic, APIs, and database work that keep an app running.</p>
+                        </div>
+                    </div>
+                    <div class="ap-item">
+                        <div class="ap-ic">&#9783;</div>
+                        <div>
+                            <div class="ap-h">Databases</div>
+                            <p>Structuring and querying data with MySQL so the front-end always has what it needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-copy reveal">
+                    <h3>UI/UX developer with a <span class="accent">back-end</span> backbone.</h3>
+                    <p>I like turning real problems into working software &mdash; designing the interface people
+                        actually use, then building the back-end logic and databases behind it. Most of my projects
+                        come from real scenarios like a Davao City rental business and a restaurant payroll.</p>
+                    <p>I've been coding for about 4 years, mostly on the fundamentals, and I'm strongest in
+                        PHP/Laravel and database work.</p>
+                    <div class="info-list">
+                        <div class="row"><span class="k">Name</span><span class="v">Justine Keith Polinar</span></div>
+                        <div class="row"><span class="k">Location</span><span class="v">Davao City, PH</span></div>
+                        <div class="row"><span class="k">Degree</span><span class="v">BS Computer Science</span></div>
+                        <div class="row"><span class="k">Focus</span><span class="v">UI/UX &amp; Back-End Dev</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== fun facts ===== -->
+    <section class="sec">
+        <div class="wrap">
+            <div class="facts-grid reveal">
+                <!-- EDIT: make these numbers true for you -->
+                <div class="fact">
+                    <div class="n" data-count="6">0</div>
+                    <div class="l">Projects Shipped</div>
+                </div>
+                <div class="fact">
+                    <div class="n" data-count="4">0</div>
+                    <div class="l">Languages</div>
+                </div>
+                <div class="fact">
+                    <div class="n" data-count="2">0</div>
+                    <div class="l">Deployed Apps</div>
+                </div>
+                <div class="fact">
+                    <div class="n" data-count="4">0</div>
+                    <div class="l">Years Coding</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== skills ===== -->
+    <section id="skills" class="sec">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <div class="eyebrow">What I work with</div>
+                <h2 class="sec-title"><span class="num">02</span>My Skills</h2>
+            </div>
+            <div class="skills-grid reveal">
+                <!-- EDIT: adjust skills & percentages -->
+                <div class="bar">
+                    <div class="top"><span>PHP / Laravel</span><span class="pct">80%</span></div>
+                    <div class="track">
+                        <div class="fill" data-w="80%"></div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="top"><span>MySQL / Databases</span><span class="pct">70%</span></div>
+                    <div class="track">
+                        <div class="fill" data-w="70%"></div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="top"><span>Python</span><span class="pct">50%</span></div>
+                    <div class="track">
+                        <div class="fill" data-w="50%"></div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="top"><span>Java</span><span class="pct">45%</span></div>
+                    <div class="track">
+                        <div class="fill" data-w="45%"></div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="top"><span>Deployment &amp; Git</span><span class="pct">40%</span></div>
+                    <div class="track">
+                        <div class="fill" data-w="40%"></div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="top"><span>JavaScript / Web</span><span class="pct">30%</span></div>
+                    <div class="track">
+                        <div class="fill" data-w="30%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== services ===== -->
+    <section id="services" class="sec">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <div class="eyebrow">What I offer</div>
+                <h2 class="sec-title"><span class="num">03</span>Services</h2>
+            </div>
+            <div class="svc-grid reveal">
+                <div class="svc-card">
+                    <div class="svc-ic">&#9635;</div>
+                    <h3>UI/UX &amp; Web Design</h3>
+                    <p>Clean, easy-to-use interfaces turned into responsive web pages that look right on any
+                        screen.</p>
+                    <ul class="svc-list">
+                        <li>Layout &amp; visual design</li>
+                        <li>Responsive, mobile-friendly pages</li>
+                        <li>HTML &amp; CSS implementation</li>
+                    </ul>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-ic">&#9881;</div>
+                    <h3>Back-End Development</h3>
+                    <p>The server-side logic that makes an app actually work &mdash; built mainly with PHP and
+                        Laravel.</p>
+                    <ul class="svc-list">
+                        <li>PHP / Laravel applications</li>
+                        <li>Forms, auth &amp; CRUD systems</li>
+                        <li>App logic &amp; integrations</li>
+                    </ul>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-ic">&#9783;</div>
+                    <h3>Database Design</h3>
+                    <p>Well-structured MySQL databases and queries so your data stays organized and fast to
+                        reach.</p>
+                    <ul class="svc-list">
+                        <li>MySQL schema design</li>
+                        <li>Queries &amp; relationships</li>
+                        <li>Data-driven dashboards</li>
+                    </ul>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-ic">&#9650;</div>
+                    <h3>Deployment</h3>
+                    <p>Taking a finished project from my machine to live hosting so people can actually use it.</p>
+                    <ul class="svc-list">
+                        <li>Shared / live hosting setup</li>
+                        <li>Git version control</li>
+                        <li>Getting a project online</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== portfolio ===== -->
+    <section id="portfolio" class="sec">
+        <div class="wrap">
+            <div class="sec-head center reveal">
+                <div class="eyebrow">Recent work</div>
+                <h2 class="sec-title"><span class="num">04</span>Portfolio</h2>
+            </div>
+            <div class="port-grid reveal">
+                <div class="pcard pg1">
+                    <span class="glyph">{ }</span>
+                    <img class="shot" src="assets/citiescapes.png" alt="Citiescapes Rental screenshot"
+                        loading="lazy" onerror="this.remove()">
+                    <div class="overlay">
+                        <div class="cat">Web App</div>
+                        <h3>Citiescapes Rental</h3>
+                        <p>Laravel apartment rental management, deployed to live hosting.</p>
+                        <div class="chips"><span>Laravel</span><span>MySQL</span><span>Hostinger</span></div>
+                        <a href="https://github.com/Yuutzu/citiescapes-laravel" target="_blank" rel="noopener">View
+                            Repository &rarr;</a>
+                    </div>
+                </div>
+                <div class="pcard pg2">
+                    <span class="glyph">&#8962;</span>
+                    <img class="shot" src="assets/hotel.png" alt="Luxe Haven Hotel screenshot"
+                        loading="lazy" onerror="this.remove()">
+                    <div class="overlay">
+                        <div class="cat">Web App</div>
+                        <h3>Luxe Haven Hotel</h3>
+                        <p>PHP reservations, payments, admin dashboard, email &amp; PDF. Previously deployed live.</p>
+                        <div class="chips"><span>PHP</span><span>MySQL</span><span>PDF</span></div>
+                        <a href="https://github.com/Yuutzu/hbms-php" target="_blank" rel="noopener">View Repository
+                            &rarr;</a>
+                    </div>
+                </div>
+                <div class="pcard pg3">
+                    <span class="glyph">&#8369;</span>
+                    <img class="shot" src="assets/epms.png" alt="EPMS Payroll screenshot" loading="lazy"
+                        onerror="this.remove()">
+                    <div class="overlay">
+                        <div class="cat">Desktop App</div>
+                        <h3>EPMS Payroll</h3>
+                        <p>Java Swing payroll with PDF payslips on embedded SQLite.</p>
+                        <div class="chips"><span>Java</span><span>SQLite</span><span>iText</span></div>
+                        <a href="https://github.com/Yuutzu/epms-java" target="_blank" rel="noopener">View Repository
+                            &rarr;</a>
+                    </div>
+                </div>
+                <div class="pcard pg2">
+                    <span class="glyph">&#8776;</span>
+                    <img class="shot" src="assets/flood.png" alt="Flood Risk Simulation screenshot"
+                        loading="lazy" onerror="this.remove()">
+                    <div class="overlay">
+                        <div class="cat">Simulation</div>
+                        <h3>Flood Risk Simulation</h3>
+                        <p>Python HAND terrain + D8 flow routing with a Tkinter GUI.</p>
+                        <div class="chips"><span>Python</span><span>Tkinter</span><span>Simulation</span></div>
+                        <a href="https://github.com/Yuutzu/frs-python" target="_blank" rel="noopener">View Repository
+                            &rarr;</a>
+                    </div>
+                </div>
+                <div class="pcard pg1">
+                    <span class="glyph">&#9733;</span>
+                    <img class="shot" src="assets/github.png" alt="GitHub profile screenshot" loading="lazy"
+                        onerror="this.remove()">
+                    <div class="overlay">
+                        <div class="cat">More</div>
+                        <h3>All Repositories</h3>
+                        <p>Browse the rest of my work on GitHub.</p>
+                        <div class="chips"><span>GitHub</span></div>
+                        <a href="https://github.com/Yuutzu" target="_blank" rel="noopener">Visit Profile &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== contact ===== -->
+    <section id="contact" class="sec">
+        <div class="wrap">
+            <div class="sec-head reveal">
+                <div class="eyebrow">Say hello</div>
+                <h2 class="sec-title"><span class="num">05</span>Contact</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-copy reveal">
+                    <div class="contact-lede">Let's <span class="accent">work</span> together.</div>
+                    <p>I'm looking for an OJT placement where I can build and ship real things. Feel free to reach out.
+                    </p>
+                    <div class="cinfo">
+                        <!-- EDIT: real email -->
+                        <div class="row">
+                            <div class="ic">&#9993;</div>
+                            <div>
+                                <div class="k">Email</div>
+                                <div class="v">j.polinar.540369@umindanao.edu.ph</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="ic">&#9883;</div>
+                            <div>
+                                <div class="k">GitHub</div>
+                                <div class="v">github.com/Yuutzu</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="ic">&#9737;</div>
+                            <div>
+                                <div class="k">Location</div>
+                                <div class="v">Davao City, Philippines</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-card reveal">
+                    <h3>Eager to learn &amp; grow</h3>
+                    <p>I'm early in my journey and improving every day. I'm looking for an OJT placement where I can
+                        contribute, learn from a real team, and become a better developer. Open to feedback and ready to
+                        get started.</p>
+                    <a class="btn btn-a" href="https://github.com/Yuutzu" target="_blank" rel="noopener">View GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
